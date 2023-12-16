@@ -1,0 +1,268 @@
+/*----------------01.fonts----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/*----------------02.config-padrao----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/*----------------03.tag----------------*/
+body {
+    background-color: #EDF2F8;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width:  24px;
+    height: 24px;
+}
+
+h1 {
+    font-size: 0.9em;
+}
+
+h2 {
+    font-size: 0.6rem;
+}
+
+figcaption {
+    margin-left: 0.9rem;
+}
+/*----------------04.classe----------------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 13.6rem);
+    grid-template-rows: repeat(2, 13.25rem);
+    gap: 1.3rem;
+}
+
+.elemento {
+    border-radius: 6px;
+    padding: 1.9rem;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-top: -0.8rem;
+}
+
+.icon {
+    width: 5.19rem;
+    height: 5.19rem;
+    position: absolute;
+    top: 0;
+    left: 19.1rem;
+    z-index: -1;
+}
+
+.paragraph-1 {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.paragraph-2 {
+    font-size: 0.8em;
+    line-height: 0.9rem;
+}
+/*----------------05.id----------------*/
+#daniel-post {
+    background-color: #733FC8;
+    position: relative;
+    grid-column: 1 / 3;
+    z-index: -1;
+}
+
+#img-daniel, #img-patrick {
+    border-radius: 50%;
+    border: 1px solid #A173EA;
+}
+
+#daniel-post h1 {
+    color: #DFCFE9;
+}
+
+#daniel-post h2 {
+    color:#A173EA;
+}
+
+#daniel-post .paragraph-1 {
+    color: #E9D5F1;
+}
+
+#daniel-post .paragraph-2 {
+    color:#A173EA;
+    width: 24rem;
+}
+
+#jonathan-post {
+    background-color: #49556B;
+}
+
+#jonathan-post h1 {
+    color: #D5DBE0;
+}
+
+#jonathan-post h2, #jonathan-post .paragraph-2 {
+    color: #A5B0BA;
+}
+
+#jonathan-post .paragraph-1, #patrick-post h1, #patrick-post .paragraph-1 {
+    color: white;
+}
+
+#kira-post {
+    grid-column: 4 / 4;
+    grid-row: 1 / 3;
+}
+
+#kira-post, #jeanette-post {
+    background-color: white;
+    box-shadow: -5px 10px 40px hsl(241, 100%, 89%);
+}
+
+#kira-post h1, #kira-post .paragraph-1, #jeanette-post h1, #jeanette-post .paragraph-1 {
+    color: #263142;
+}
+
+#kira-post h2, #jeanette-post h2 {
+    color: #C5C5C7;
+}
+
+#kira-post .paragraph-2 {
+    width: 9.7rem;
+}
+
+#kira-post .paragraph-2, #jeanette-post .paragraph-2 {
+    color: #9C9FA2;
+}
+
+#patrick-post {
+    grid-column: 2 / 4;
+    background-color: #18202D;
+}
+
+#patrick-post h2, #patrick-post .paragraph-2 {
+    color: #6B6F7B;
+}
+
+#jeanette-post .paragraph-1 {
+    width: 9rem;
+}
+
+#jeanette-post .paragraph-2 {
+    width: 9rem;
+    margin-top: 0.5rem;
+}
+
+#patrick-post .paragraph-2 {
+    width: 23rem;
+}
+    
+/*----------------06.responsive----------------*/
+
+@media (max-width: 874px) {
+    img {
+        width:  18px;
+        height: 18px;
+    }
+
+    h1 {
+        font-size: 0.6em;
+    }
+    
+    h2 {
+        font-size: 0.3rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 11.8rem);
+        grid-template-rows: repeat(8, 7.2rem);
+        gap: 0.7rem;
+        margin: 0 0 -26rem 0;
+    }
+    .elemento {
+        padding: 1.3rem;
+    }
+    
+
+    .paragraph-1 {
+        font-size: 0.66rem;
+        margin: 0.4rem 0 0.4rem 0;
+    }
+
+    .paragraph-2 {
+        font-size: 0.6em;
+        line-height: 0.7rem;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 0;
+        left: 6.7rem;
+        z-index: -1;
+    }
+    
+    #daniel-post {
+        position: relative;
+        grid-column: 1 / 1;
+        grid-row: 1 / 3;
+    }
+
+    #daniel-post .paragraph-1 {
+        width: 8.53rem;
+    }
+
+    #daniel-post .paragraph-2 {
+        width: 9rem;
+    }
+
+    #jonathan-post .paragraph-1 {
+        width: 8rem;
+    } 
+
+    #jonathan-post .paragraph-2 {
+        width: 10rem;
+    }
+
+    #jeanette-post .paragraph-1 {
+        width: 8rem;
+    }
+
+    #patrick-post {
+        grid-column: 1 / 1;
+        grid-row: 5 / 7;
+        height: 10.3rem;
+    }
+
+    #patrick-post .paragraph-1 {
+        width: 8.7rem;
+    }  
+
+    #patrick-post .paragraph-2 {
+        width: 9.8rem;
+    }    
+
+    #kira-post {
+        grid-column: 1 / 1;
+        grid-row: 7 / 9;
+        margin-top: -2.1rem;
+        height: 12.6rem;
+    }
+
+    #kira-post .paragraph-2 {
+        margin-top: 0.1rem;
+        width: 9.8rem;
+    }
+
+}
